@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rikym.thiefttracker.Acerca"
+    android:background="#F3F3F3">
+
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="360dp"
+    android:src="@drawable/info"
+    android:background="#F3F3F3"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="380dp"
+        android:src="@drawable/paypal"
+        android:background="#F3F3F3"/>
+</RelativeLayout>

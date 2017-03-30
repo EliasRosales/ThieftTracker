@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_reporte"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="0dp"
+    android:background="#0092F6"
+tools:context="com.example.rikym.thiefttracker.reporte">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:layout_marginRight="90dp"
+        android:src="@drawable/banner"
+        android:id="@+id/imageView" />
+
+    <ImageButton
+        android:id="@+id/acercade"
+        android:layout_width="40dp"
+        android:padding="12dp"
+        android:layout_height="45dp"
+        android:background="#0093F5"
+        android:layout_marginRight="2dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/acerca"
+        android:layout_marginEnd="11dp"
+        android:layout_above="@+id/map"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="73dp"
+        android:textSize="15dp"
+
+        android:layout_marginTop="48dp"
+    android:text="Selecciona la ubicacion"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="#FFFFFF"/>
+
+<fragment
+    android:name="com.google.android.gms.maps.MapFragment"
+    android:id="@+id/map"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_marginTop="19dp"
+    android:layout_below="@+id/imageView" />
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_marginTop="317dp"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        tools:context="com.example.alan.quenoteroben.reporte">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="14dp"
+            android:id="@+id/tipo"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Selecciona la fecha del incidente"
+            android:layout_marginTop="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15dp"/>
+
+        <DatePicker
+            android:datePickerMode="spinner"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:calendarViewShown="false"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="120dp"
+            android:id="@+id/fecha"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Selecciona la hora del incidente"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="285dp"
+            android:id="@+id/textView"
+            android:textSize="15dp"/>
+        <TimePicker
+            android:timePickerMode="spinner"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:inputType="time"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/hora"
+            android:layout_below="@+id/textView"
+            android:layout_alignEnd="@+id/fecha" />
+
+        <Button
+            android:text="Enviar"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:src="@drawable/thief"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:layout_marginTop="485dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/btnGuardar"
+            android:layout_alignParentEnd="true"
+            android:background="#0093F5"
+            />
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
+</RelativeLayout>
